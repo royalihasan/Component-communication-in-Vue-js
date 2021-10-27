@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <Child user="Roy Ali Hasan" />
+    <Child v-bind:products='products' />
   </div>
 </template>
 
@@ -10,5 +10,15 @@ import Child from "./components/Child.vue";
 export default {
   name: "App",
   components: { Child },
+  data() {
+    return {
+      products: [
+        { productName: "Hp compaq 6005", Ram: "4GB", Hard: "240GB" },
+        { productName: "Dell", Ram: "2GB", Hard: "40GB" },
+        { productName: "Acer", Ram: "6GB", Hard: "140GB(ssd)" },
+        { productName: "Mac", Ram: "12GB", Hard: "1TB" },
+      ],
+    };
+  },
 };
 </script>
