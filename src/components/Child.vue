@@ -13,7 +13,7 @@
     </span>
 <!-- button -->
   <div>
-      <button>Click Me</button>
+    
  </div>
   </div>
 </template>
