@@ -2,6 +2,7 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <Child v-bind:products='products' />
+    <button>Click Me</button>
   </div>
 </template>
 
