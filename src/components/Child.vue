@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>Hello from Child</h1>
-
+  
+<!--  -->
+   <b> {{ user }} </b>
     <span v-for="product in products" :key="product.id">
       Pc ={{ product.productName }}
       <br />
@@ -10,16 +11,17 @@
       Hard:{{ product.Hard }}
       <hr />
     </span>
-
-    <!-- = -->
-    {{ user }}
+<!-- button -->
+  <div>
+      <button>Click Me</button>
+ </div>
   </div>
 </template>
 
 <script>
 export default {
   name: "Child",
-  props: ["products"],
+  props: ["products","user"],
   methods: {},
 };
 </script>

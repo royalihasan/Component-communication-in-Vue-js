@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <Child v-bind:products='products' />
-    <button>Click Me</button>
+    <Parent productName="Products Details" />
+    <!-- = -->
+    <Child v-bind:products="products" />
   </div>
 </template>
 
 <script>
 import Child from "./components/Child.vue";
+import Parent from "./components/Parent.vue";
+
 export default {
   name: "App",
-  components: { Child },
+  components: { Child,Parent },
   data() {
     return {
       products: [
